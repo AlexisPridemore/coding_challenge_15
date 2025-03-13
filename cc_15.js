@@ -64,3 +64,8 @@ resolveButton.addEventListener('click', function() {
     riskCard.remove();
 });
 
+// Task 4: Categorizing Risks by Level
+
+// Test Cases
+addRiskItem("Cybersecurity Threat", "High", "IT");
+addRiskItem("HR Compliance Issue", "Low", "Human Resources");
