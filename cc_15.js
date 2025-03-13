@@ -48,3 +48,19 @@ document.getElementById('riskForm').addEventListener('submit', function(event) {
 // Test example data
 addRiskItem("Data Breach", "High", "IT");
 addRiskItem("Supply Chain Disruption", "Medium", "Operations");
+
+// Task 3: Removing Risk Items
+
+const riskContent = `
+    <h3>${riskName}</h3>
+    <p>Risk Level: ${riskLevel}</p>
+    <p>Department: ${department}</p>
+    <button class="resolveButton">Resolve</button>  <!-- Added Resolve button here -->
+`;
+
+const resolveButton = riskCard.querySelector('.resolveButton');
+resolveButton.addEventListener('click', function() {
+    // Remove the risk card when the resolve button is clicked
+    riskCard.remove();
+});
+
