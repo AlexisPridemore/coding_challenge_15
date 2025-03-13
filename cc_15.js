@@ -93,3 +93,18 @@ function increaseRiskLevels() {
         setRiskLevelStyles(card, newRiskLevel);
     });
 }
+
+// Task 6: Handling Event Propagation
+
+riskCard.addEventListener('click', function(event) {
+    event.stopPropagation(); // Prevent the click event from bubbling to parent (dashboard)
+});
+
+resolveButton.addEventListener('click', function(event) {
+    event.stopPropagation(); // Prevent event bubbling when clicking "Resolve" button
+    // Remove the risk card when the resolve button is clicked
+    riskCard.remove();
+});
+
+
+
