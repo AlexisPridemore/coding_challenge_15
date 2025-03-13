@@ -86,7 +86,7 @@ function increaseRiskLevels() {
             newRiskLevel = 'High';
         }
 
-        // Update the risk level and re-apply styles
+        // Update the risk level
         riskLevelElement.innerText = newRiskLevel;
 
         // Update the background color based on the new risk level
@@ -97,11 +97,11 @@ function increaseRiskLevels() {
 // Task 6: Handling Event Propagation
 
 riskCard.addEventListener('click', function(event) {
-    event.stopPropagation(); // Prevent the click event from bubbling to parent (dashboard)
+    event.stopPropagation(); // Prevent the click event from bubbling 
 });
 
 resolveButton.addEventListener('click', function(event) {
-    event.stopPropagation(); // Prevent event bubbling when clicking "Resolve" button
+    event.stopPropagation(); // Prevent event bubbling when clicking
     // Remove the risk card when the resolve button is clicked
     riskCard.remove();
 });
