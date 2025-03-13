@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Ticket System</title>
+</head>
+    <style>
+    body {
+            background-color: #ccebf2;
+        }
+        .ticket-card {
+            border: 1px solid #88bff2;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .high-priority {
+            border:3px solid rgb(214, 14, 14);
+            background-color: rgb(231, 146, 248);
+            font-weight: bold;
+        }
+        .other-priority {
+            border: 2px solid black;
+            background-color: lightblue;
+        }
+        .ticket-header{
+            color: rgba(192, 46, 241, 0.683);
+        }
+        header {
+            width: 100%;
+            padding: 20px;
+        }
+        header, footer {
+            text-align: center;
+            align-content: center;
+            background-color: rgba(240, 179, 231, 0.888);
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        footer p {
+            margin-bottom:20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-bottom: 60px;
+        }
+        main {
+            padding: 20px;
+        }
+        .resolve-btn, .save-btn, input[type="text"] {
+            width: 200px;
+        }
+        #ticketContainer {
+            margin-bottom: 20px; 
+        }
+        #addTicketBtn{
+            background-color: white;
+            margin-left:10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Customer Support Ticket System</h1>
+</header>
+
+<main>
+    <div id="riskDashboard">
+        <!-- - Risk items will be dynamically added here -->
+    </div>
+    <div>
+        <!--Add RIsk item button-->
+        <button id="addTicketBtn">Add Ticket</button>
+    </div>
+</main>
+
+<footer>
+    <h1>2025 Customer Support System</h1>
+</footer>
+
+<!-- Link to JavaScript File -->
+<script src="cc_15.js"></script>
+
+</body>
+</html>
