@@ -69,3 +69,27 @@ resolveButton.addEventListener('click', function() {
 // Test Cases
 addRiskItem("Cybersecurity Threat", "High", "IT");
 addRiskItem("HR Compliance Issue", "Low", "Human Resources");
+
+// Task 5: Implementing Bulk Updates
+
+function increaseRiskLevels() {
+    const riskCards = document.querySelectorAll('.riskCard');
+    
+    riskCards.forEach(function(card) {
+        const riskLevelElement = card.querySelector('.riskLevel');
+        const currentRiskLevel = riskLevelElement.innerText;
+
+        let newRiskLevel = currentRiskLevel;
+        if (currentRiskLevel === 'Low') {
+            newRiskLevel = 'Medium';
+        } else if (currentRiskLevel === 'Medium') {
+            newRiskLevel = 'High';
+        }
+
+        // Update the risk level and re-apply styles
+        riskLevelElement.innerText = newRiskLevel;
+
+        // Update the background color based on the new risk level
+        setRiskLevelStyles(card, newRiskLevel);
+    });
+}
